@@ -1,0 +1,343 @@
+.container {
+    height: 1200px;
+    width: 80%;
+    margin: auto;
+}
+
+#match1,
+#match2,
+#match3,
+#match4 {
+    width: 100%;
+    height: 150px;
+    display: block;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* hiệu ứng hover mượt mà */
+    margin: 50px 0px 77px 0px;
+    position: relative;
+}
+
+#match1 {
+    background: url("/assets/img/Match1.png") top center/ cover no-repeat;
+}
+
+#match2 {
+    background: url("/assets/img/Match2.png") top center/ cover no-repeat;
+}
+
+#match3 {
+    background: url("/assets/img/Match3.png") top center/ cover no-repeat;
+}
+
+#match4 {
+    background: url("/assets/img/Match4.png") top center/ cover no-repeat;
+}
+
+.content {
+    color: azure;
+    height: 600px;
+    font-size: 56px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#match1:hover,
+#match2:hover,
+#match3:hover,
+#match4:hover {
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.5);
+    /* Bóng sáng trắng */
+    transform: scale(1.05);
+}
+
+
+.left {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.right {
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+.team-name {
+    width: 50%;
+    margin-top: 45px;
+}
+
+.left .team-name {
+    float: left;
+}
+
+.right .team-name {
+    float: right;
+}
+
+.right .team-name>span {
+    float: right;
+}
+
+.logo-team {
+    width: 50%;
+}
+
+.logo-team img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.left .logo-team {
+    width: 50%;
+    height: 70px;
+    float: right;
+    margin-top: 45px;
+}
+
+.right .logo-team {
+    width: 50%;
+    height: 70px;
+    float: left;
+    margin-top: 45px;
+}
+
+
+/* Giảm độ sáng ảnh nền */
+.left img,
+.right img {
+    filter: brightness(50%);
+    /* Làm mờ ảnh */
+    transition: filter 0.3s ease;
+    /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+.left span,
+.right span {
+    filter: brightness(50%);
+    /* Làm mờ ảnh */
+    transition: filter 0.3s ease;
+    /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+/* Làm sáng ảnh khi hover */
+.left:hover img,
+.right:hover img {
+    filter: brightness(100%);
+    /* Khôi phục độ sáng khi hover */
+}
+
+.left:hover span,
+.right:hover span {
+    filter: brightness(100%);
+    /* Khôi phục độ sáng khi hover */
+}
+
+
+
+.container-event {
+    height: 650px;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    /* Chuyển về dạng cột */
+    align-items: center;
+    /* Căn giữa ngang các thành phần */
+    position: relative;
+}
+
+.content-event {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url(/assets/img/71289610_p0_master1200.jpg) center/ cover no-repeat;
+    overflow: hidden;
+}
+
+.content-event::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    /* hoặc filter: brightness(20%) nếu thích */
+    z-index: 0;
+}
+
+
+
+.content-top {
+    height: 75px;
+    font-size: 35px;
+    color: white;
+    filter: brightness(100%);
+}
+
+
+.content-mid {
+    height: 150px;
+}
+
+.team1 {
+    background: url("/assets/img/Match1.png") top center/ cover no-repeat;
+    width: 100%;
+    height: 150px;
+    display: block;
+    border-radius: 20px;
+    position: relative;
+}
+
+.team1 span {
+    filter: brightness(100%) !important;
+}
+
+.team1 img {
+    filter: brightness(100%) !important;
+}
+
+.content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+    /* Dịch chuyển xuống 15px */
+}
+
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+    color: azure;
+    filter: brightness(100%);
+}
+
+.round {
+    color: azure;
+    filter: brightness(100%);
+}
+
+.button {
+    background-color: #d9534f;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+    /* đẩy lên để gần ảnh hơn */
+    margin-bottom: 30px;
+
+}
+
+.info {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: azure;
+}
+
+
+.container-profile {
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 77px 0px 52px 0px;
+}
+
+
+.user-info p,
+.user-info a {
+    margin: 5px 0;
+    color: white;
+    font-size: 14px;
+}
+
+.user-info a {
+    text-decoration: underline;
+    color: #cccccc;
+}
+
+.ticket-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 150px;
+}
+
+.ticket-section {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #2a2a2a;
+    /* nền khối container */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.ticket-section table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    /* nền bảng chính */
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.ticket-section th,
+.ticket-section td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #3a3a3a;
+    /* viền ngăn cách */
+}
+
+.ticket-section th {
+    background-color: #292929;
+    /* nền header bảng */
+    color: #00bfff;
+    /* xanh dương nhẹ - phong cách eSports */
+}
+
+.ticket-section tr:hover {
+    background-color: #333333;
+    /* hover tối hơn 1 chút */
+}
+
+.container-payment {
+    height: 600px;
+    text-align: center;
+    margin: 100px 0px 10px 0px;
+}
+
+
+.container-payment img {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+.payment-info {
+    margin-top: 20px;
+}
+
+.payment-info p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    .container img {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,60 @@
+.header {
+    position: fixed;
+    background-color: #050F1A;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Box ::shadow nhớ để sử dụng với các thể card*/
+
+#nav {
+    list-style: none;
+    height: 100%;
+    display: flex;
+}
+
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    color: azure;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0px 50px 0px 50px;
+    font-size: 14px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+#nav>li>a {
+    text-transform: uppercase;
+}
+
+#nav li:hover a {
+    color: #74B9EF;
+    background-color: #20415C;
+}
+
+#home {
+    font-size: 30px !important;
+    transition: color 0.2s;
+}
+
+#home:hover {
+    color: #44C0ED !important;
+    background-color: #050F1A !important;
+}
+
+
+.main-image {
+    width: 100%;
+    height: 660px;
+    margin-top: 70px;
+    background: url('../img/drx-deft-2.png') top center/ cover no-repeat;
+    margin-bottom: 123px;
+}
